@@ -4,7 +4,10 @@ import { defineConfig } from 'vite'
 console.log(process.env.NODE_ENV)
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: 'drakefood-frontend-application',
+  base:
+    process.env.NODE_ENV === 'production'
+      ? '/drakefood-frontend-application/'
+      : '/',
   plugins: [React()],
   resolve: {
     alias: {

@@ -36,7 +36,7 @@ export default () => {
         <div className="flex justify-center mt-10">
           <img
             className="rounded-xl hover:shadow-lg transition-all duration-500 cursor-pointer"
-            src="/images/amiibo-lineup.avif"
+            src="images/amiibo-lineup.avif"
             onClick={navigateToSuperSmashBrosAmiiboSeries}
           />
         </div>
@@ -48,7 +48,7 @@ export default () => {
       >
         <img
           className="rounded-xl w-full md:w-[30%]"
-          src="/images/amiibo-yarn-yoshi.webp"
+          src="images/amiibo-yarn-yoshi.webp"
         />
         <div className="text-center w-full md:w-[50%]">
           <h2 className="text-md font-bold text-gray-800">
@@ -78,7 +78,7 @@ export default () => {
         </div>
         <img
           className="rounded-xl w-full md:w-[30%] order-1 md:order-2"
-          src="/images/amiibo-card-animalcrossing.png"
+          src="images/amiibo-card-animalcrossing.png"
         />
       </section>
     </Fragment>

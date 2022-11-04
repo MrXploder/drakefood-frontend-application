@@ -17,7 +17,7 @@ export default () => {
             <Link to="/">
               <img
                 className="h-8 w-auto sm:h-10"
-                src="/images/amiibo.png"
+                src="images/amiibo.png"
                 alt=""
               />
             </Link>
