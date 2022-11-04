@@ -9,6 +9,8 @@ import App from './App'
 import 'flowbite';
 import './index.css'
 
+console.log("init!")
+
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
     <Provider store={store}>
