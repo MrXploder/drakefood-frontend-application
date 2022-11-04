@@ -58,7 +58,7 @@ export const apiSlice = createApi({
               urlParams.set('name', params.search)
             }
           }
-          return { url: `amiibo`, method: "GET", params: urlParams }
+          return { url: `amiibo`, method: "GET" }
         },
         transformResponse: (response: { amiibo: IAmiibo[] }) =>
           response.amiibo.map((amiibo) => ({
