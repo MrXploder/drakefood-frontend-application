@@ -1,1 +1,0 @@
-# drakefoods-frontend-application
