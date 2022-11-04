@@ -37,7 +37,7 @@ export const apiSlice = createApi({
   reducerPath: 'amiibos',
 
   baseQuery: axiosBaseQuery({
-    baseUrl: 'https://www.amiiboapi.com/api/'
+    baseUrl: 'https://www.amiiboapi.com/api'
   }),
   endpoints(builder) {
     return {
@@ -58,7 +58,7 @@ export const apiSlice = createApi({
               urlParams.set('name', params.search)
             }
           }
-          return { url: `/amiibo?${urlParams.toString()}`, method: "GET" }
+          return { url: `amiibo`, method: "GET", params: urlParams }
         },
         transformResponse: (response: { amiibo: IAmiibo[] }) =>
           response.amiibo.map((amiibo) => ({
