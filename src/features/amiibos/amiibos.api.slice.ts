@@ -5,7 +5,7 @@ export const apiSlice = createApi({
   reducerPath: 'amiibos',
 
   baseQuery: fetchBaseQuery({
-    baseUrl: 'https://amiiboapi.com/api/'
+    baseUrl: 'https://www.amiiboapi.com/api/'
   }),
   endpoints(builder) {
     return {
